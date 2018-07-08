@@ -3,8 +3,10 @@
 public class CameraRaycaster : MonoBehaviour
 {
     public Layer[] layerPriorities = {
+        Layer.NotWalkable,
+        Layer.Water,
         Layer.Enemy,
-        Layer.Walkable
+        Layer.Walkable,
     };
 
     [SerializeField] float distanceToBackground = 100f;

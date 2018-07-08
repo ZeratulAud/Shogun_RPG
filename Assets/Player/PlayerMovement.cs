@@ -77,6 +77,12 @@ public class PlayerMovement : MonoBehaviour
 
             switch (cameraRaycaster.currentLayerHit)
             {
+                case Layer.Water:
+                    currentDestination = ShortDestination(clickPoint, RangedAttackRadius);
+                    break;
+                case Layer.NotWalkable:
+                    currentDestination = ShortDestination(clickPoint, RangedAttackRadius);
+                    break;
                 case Layer.Walkable:
                     currentDestination = ShortDestination(clickPoint, StopRadius);
                     break;
