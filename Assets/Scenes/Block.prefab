@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33215524555060340}
   - component: {fileID: 23617885181106452}
   - component: {fileID: 65008991994759114}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,7 +37,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4387156632318032}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
