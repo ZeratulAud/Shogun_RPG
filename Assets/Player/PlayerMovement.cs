@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
 
 
     // Fixed update is called in sync with physics
-    private void FixedUpdate()
+    /*private void FixedUpdate()
     {
         if (Input.GetMouseButton(2))
         {
@@ -55,7 +55,7 @@ public class PlayerMovement : MonoBehaviour
         {
             ProcessMouseMovement();
         }
-    }
+    }*/
 
     private void ProcessDirectMovement()
     {
@@ -69,35 +69,35 @@ public class PlayerMovement : MonoBehaviour
         Character.Move(Move, false, false);
     }
 
-    private void ProcessMouseMovement()
-    {
-        if (Input.GetMouseButton(0))
-        {
-            clickPoint = cameraRaycaster.hit.point;
+    //private void ProcessMouseMovement()
+    //{
+    //    if (Input.GetMouseButton(0))
+    //    {
+    //        clickPoint = cameraRaycaster.hit.point;
 
-            switch (cameraRaycaster.currentLayerHit)
-            {
-                case Layer.Water:
-                    currentDestination = ShortDestination(clickPoint, RangedAttackRadius);
-                    break;
-                case Layer.NotWalkable:
-                    currentDestination = ShortDestination(clickPoint, RangedAttackRadius);
-                    break;
-                case Layer.Walkable:
-                    currentDestination = ShortDestination(clickPoint, StopRadius);
-                    break;
-                case Layer.Enemy:
-                    currentDestination = ShortDestination(clickPoint, RangedAttackRadius);
-                    break;
-                case Layer.RaycastEndStop:
-                    break;
-                default:
-                    print("SHOULD NOT BE HERE");
-                    return;
-            }
-        }
-        WalkToDestination();
-    }
+    //        switch (cameraRaycaster.currentLayerHit)
+    //        {
+    //            case Layer.Water:
+    //                currentDestination = ShortDestination(clickPoint, RangedAttackRadius);
+    //                break;
+    //            case Layer.NotWalkable:
+    //                currentDestination = ShortDestination(clickPoint, RangedAttackRadius);
+    //                break;
+    //            case Layer.Walkable:
+    //                currentDestination = ShortDestination(clickPoint, StopRadius);
+    //                break;
+    //            case Layer.Enemy:
+    //                currentDestination = ShortDestination(clickPoint, RangedAttackRadius);
+    //                break;
+    //            case Layer.RaycastEndStop:
+    //                break;
+    //            default:
+    //                print("SHOULD NOT BE HERE");
+    //                return;
+    //        }
+    //    }
+    //    WalkToDestination();
+    //}
 
     private void WalkToDestination()
     {

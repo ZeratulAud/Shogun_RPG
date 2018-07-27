@@ -81,14 +81,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1940105028717284}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.38268343, z: 0, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4509079680864620}
   m_Father: {fileID: 4021513458410140}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
 --- !u!4 &4509079680864620
 Transform:
   m_ObjectHideFlags: 1
@@ -96,7 +96,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1292297017983624}
   m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: -0.46, y: 6.31, z: -5.31}
+  m_LocalPosition: {x: -0.46, y: 9.23, z: -8.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4305761142872464}
@@ -157,6 +157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkCursor: {fileID: 2800000, guid: b98f7538abbf0ba4bb715c20f1606b62, type: 3}
+  cantWalkCursor: {fileID: 0}
   attackCursor: {fileID: 2800000, guid: d0bced0ee32e01144a0563253cd9d241, type: 3}
   unknownCursor: {fileID: 2800000, guid: 6c73b603416ad454ea27cdc540375cdc, type: 3}
   cursorHotspot: {x: 0, y: 0}
@@ -179,8 +180,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1292297017983624}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71e2acad684421348b68cf42f4935657, type: 3}
+  m_Script: {fileID: 11500000, guid: d02853f5d34bd8f429969ac34c466d07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layerPriorities: 0900000008000000
-  distanceToBackground: 100
+  layerPriorities: 090000000a00000008000000
